@@ -14,6 +14,10 @@ class Retangulo
 		end
 	end
 
+	def area
+		@area = altura.to_i * largura.to_i
+	end
+
 	def perimetro
 		@perimetro = 2*(altura.to_i + largura.to_i)
 	end
@@ -28,4 +32,6 @@ r = Retangulo.new
 r.largura = 3
 r.altura = 3
 
-puts 'largura = ' + r.largura.to_s + ' altura = ' + r.altura.to_s + ' perimetro = ' + r.perimetro.to_s + ' quadrado = ' + r.quadrado?.to_s
+puts 'largura = ' + r.largura.to_s + ' altura = ' + r.altura.to_s
+puts 'perimetro = ' + r.perimetro.to_s + ' area = ' + r.area.to_s
+puts 'quadrado = ' + r.quadrado?.to_s
