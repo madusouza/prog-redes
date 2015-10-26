@@ -1,3 +1,25 @@
+# Programação para Redes
+# Aluna: Maria Duciele de Souza Silva
+
+# ============================
+
+# Exercício 1 - Implementando classes
+
+# Implemente a classe Retangulo com os seguintes membros:
+
+# – Atributos largura e altura, ambos com acesso de leitura e escrita. Não podem assumir valor zero ou negativo.
+
+# – Método area. Sem argumentos e deve retornar o valor da área do retângulo.
+
+# – Método perimetro. Sem argumentos e deve retornar o valor do perímetro do retângulo.
+
+# – Método set_dimensoes. Deve definir dois argumentos que serão utilizados para alterar as dimensões do retângulo. Valores negativos devem ser ignorados.
+
+# – Método quadrado. Deve retornar true caso o retângulo seja um quadrado e false em caso contrário.
+
+# • Escreva um programa para testar a implementação da classe.
+
+
 class Retangulo
 	attr_accessor :largura
 	attr_accessor :altura
@@ -32,6 +54,6 @@ end
 
 r = Retangulo.new 
 
-r.set_dimensoes(5,3)
+r.set_dimensoes(3,3)
 
 r.exibir()
