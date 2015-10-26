@@ -3,11 +3,8 @@ class Retangulo
 	attr_accessor :altura
 
 	def set_dimensoes(larg,alt)
-		if larg.to_i != 0 and larg.to_i > 0
+		if (larg.to_i > 0) and (alt.to_i > 0)
 			@largura = larg
-		end
-
-		if alt.to_i != 0 and alt.to_i > 0
 			@altura = alt
 		end
 	end
@@ -35,6 +32,6 @@ end
 
 r = Retangulo.new 
 
-r.set_dimensoes(4,3)
+r.set_dimensoes(-2,3)
 
 r.exibir()
