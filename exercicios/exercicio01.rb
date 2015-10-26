@@ -32,6 +32,6 @@ end
 
 r = Retangulo.new 
 
-r.set_dimensoes(-2,3)
+r.set_dimensoes(5,3)
 
 r.exibir()
