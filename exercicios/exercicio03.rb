@@ -49,6 +49,7 @@ class Fracao
 	  self.simplificar(n,d)
 	end
 
+	#=== Adaptado de http://codereview.stackexchange.com/a/66474
 	def mdc(n,d)
 		while d != 0 do
         	n, d = d, n % d
@@ -69,6 +70,7 @@ class Fracao
 			return Fracao.new(num_simp,den_simp)
 		end
 	end
+	#===
 end
 
 f1 = Fracao.new(40,50)
@@ -81,14 +83,10 @@ f5 = f1.multiplicar(f2)
 f6 = f1.dividir(f2)
 
 puts 'Soma: ' + f3.to_s
-puts 'Subtracao: ' + f4.to_s
-puts 'Multiplicacao: ' + f5.to_s
-puts 'Divisao: ' + f6.to_s
-
 puts f3.to_f
+puts 'Subtracao: ' + f4.to_s
 puts f4.to_f
+puts 'Multiplicacao: ' + f5.to_s
 puts f5.to_f
+puts 'Divisao: ' + f6.to_s
 puts f6.to_f
-
-
-#puts f3.simplificar
