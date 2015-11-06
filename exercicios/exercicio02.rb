@@ -3,8 +3,7 @@ class Retangulo
 	attr_accessor :altura
 
 	def initialize(larg,alt)
-		@largura = larg
-		@altura = alt
+		self.set_dimensoes(alt,larg)
 	end
 
 	def set_dimensoes(larg,alt)
@@ -35,7 +34,7 @@ class Retangulo
 	end
 end
 
-r = Retangulo.new(3,10)
+r = Retangulo.new(5,8)
 
 #r.set_dimensoes(3,3)
 
