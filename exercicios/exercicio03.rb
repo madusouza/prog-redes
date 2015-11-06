@@ -46,28 +46,28 @@ class Fracao
 		d = @denominador * f.denominador
 		n = @numerador * f.denominador + f.numerador * @denominador
 		#return Fracao.new(n,d)
-		self.simplificar(n,d)
+		return self.simplificar(n,d)
 	end
 
 	def subtrair(f)
 		d = @denominador * f.denominador
 		n = @numerador * f.denominador - f.numerador * @denominador
 		#return Fracao.new(n,d)
-		self.simplificar(n,d)
+		return self.simplificar(n,d)
 	end
 
 	def multiplicar(f)
 		d = @denominador * f.denominador
 		n = @numerador * f.numerador
 		#return Fracao.new(n,d)
-		self.simplificar(n,d)
+		return self.simplificar(n,d)
 	end
 
 	def dividir(f)
 		d = @denominador * f.numerador
 		n = @numerador * f.denominador
 		#return Fracao.new(n,d)
-		self.simplificar(n,d)
+		return self.simplificar(n,d)
 	end
 
 	#=== Adaptado de http://codereview.stackexchange.com/a/66474
@@ -94,7 +94,7 @@ class Fracao
 	#===
 end
 
-f1 = Fracao.new(40,50)
+f1 = Fracao.new(60,50)
 puts 'Fracao 1: ' + f1.to_s
 f2 = Fracao.new(10,20)
 puts 'Fracao 2: ' + f2.to_s
