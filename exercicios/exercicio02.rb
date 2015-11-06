@@ -1,3 +1,14 @@
+# Programação para Redes
+# Aluna: Maria Duciele de Souza Silva
+
+# ============================
+
+# Exercício 2
+# Escreva um construtor para inicializar os atributos da classe Retangulo implementada no exercício 1.
+
+# Ajuste o programa de teste para que a instanciação de Retangulo fique compatível com o construtor criado.
+
+
 class Retangulo
 	attr_accessor :largura
 	attr_accessor :altura

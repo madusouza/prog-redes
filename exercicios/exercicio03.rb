@@ -73,9 +73,9 @@ class Fracao
 	#=== Adaptado de http://codereview.stackexchange.com/a/66474
 	def mdc(n,d)
 		while d != 0 do
-        	n, d = d, n % d
-    	end
-    	return n
+			n, d = d, n % d
+		end
+		return n
 	end
 
 	def simplificar(num,den)
